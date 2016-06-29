@@ -1,0 +1,67 @@
+设置
+<ion-view view-title="设置">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon" ng-click="getNight()"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+            <ion-radio ng-model="choice" ng-value="'A'">自助游</ion-radio>
+            <ion-radio ng-model="choice" ng-value="'A'">跟团游</ion-radio>
+            <li class="item item-toggle">
+               获取位置
+                <label class="toggle toggle-positive">
+                    <input type="checkbox">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+            <li class="item item-toggle">
+                声音
+                <label class="toggle toggle-positive">
+                    <input type="checkbox">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+            <li class="item item-toggle">
+               震动
+                <label class="toggle toggle-positive">
+                    <input type="checkbox">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+
+            <div class="item range range-calm">
+                <i class="icon ion-ios-sunny-outline"></i>
+                <input type="range" name="volume" min="0" max="100" value="33">
+                <i class="icon ion-ios-sunny"></i>
+            </div>
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    旅游爱好
+                </div>
+                <select>
+                    <option>郊游</option>
+                    <option selected>漂流</option>
+                    <option>钓鱼</option>
+                </select>
+            </label>
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    位置
+                </div>
+                <select>
+                    <option>云南</option>
+                    <option selected>成都</option>
+                    <option>马尔代夫</option>
+                </select>
+            </label>
+        </ion-list>
+    </ion-content>
+
+</ion-view>

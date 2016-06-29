@@ -1,0 +1,22 @@
+<ion-view view-title="欢迎登录">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon" ng-click="getNight()"></button>
+        <h1 class="title"></h1>
+        <a class="button button-left" ui-sref="spreads.register">注册</a>
+    </ion-nav-buttons>
+    <ion-content>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <span class="input-label">账户：</span>
+                    <input type="text" placeholder="请输入用户名" ng-model="data.email" required>
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">密码：</span>
+                    <input type="password" placeholder="密码不小于6位" ng-model="data.password" ng-minlength="6"  required>
+                </label>
+                <button class="button button-full button-assertive"  ng-disabled="!data.email||!data.password" ui-sref="spreads.tabs.home">登陆</button>
+            </div>
+
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,22 @@
+<ion-view>
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon" ng-click="getNight()"></button>
+    </ion-nav-buttons>
+    <ion-tabs class="tabs-stable tabs-icon-top">
+        <ion-tab title="首页" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline"  ui-sref="spreads.tabs.home">
+            <ion-nav-view name="tab-home"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="目的地" icon-on="ion-ios-world" icon-off="ion-ios-world-outline" ui-sref="spreads.tabs.destination">
+            <ion-nav-view name="tab-destination"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="行程玩法" icon-on="ion-ios-list" icon-off="ion-ios-list-outline" ui-sref="spreads.tabs.stroke">
+            <ion-nav-view name="tab-stroke"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="我的" icon-on="ion-ios-person" icon-off="ion-ios-person-outline" ui-sref="spreads.tabs.my">
+            <ion-nav-view name="tab-my"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+</ion-view>

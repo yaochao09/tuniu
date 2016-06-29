@@ -1,0 +1,22 @@
+
+<ion-view view-title="欢迎来到五星级酒店">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon" ng-click="getNight()"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list class="card" ng-repeat="restaurant in restaurants">
+            <ion-item>
+                <h2>{{restaurant.name}}</h2>
+                <p>{{restaurant.city}},{{restaurant.address}}</p>
+            </ion-item>
+            <ion-item class="item item-image">
+                <img ng-src="{{restaurant.image_url}}">
+            </ion-item>
+        </ion-list>
+
+        <ion-infinite-scroll on-infinite="getRestaurants()"
+                             ng-if="page<total"
+                             immediate-check="false">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>
